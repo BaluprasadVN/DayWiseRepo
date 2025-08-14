@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechConnect 2025 Conference</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-lightning-charge-fill me-2"></i>TechConnect 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5" style="margin-top: 76px;">
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Register for TechConnect 2025</h1>
+            <p class="lead text-muted">Join us for three days of innovation and networking</p>
+        </header>
+
+        <!-- Ticket Types -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 border-primary hover-card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h5 class="mb-0 fw-bold">Standard</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="display-6 fw-bold text-primary mb-3">$199</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Access to all sessions
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Networking lunch
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Conference materials
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 border-success hover-card">
+                        <div class="card-header bg-success text-white text-center">
+                            <h5 class="mb-0 fw-bold">Premium</h5>
+                            <small>Most Popular</small>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="display-6 fw-bold text-success mb-3">$299</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>All Standard benefits
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>VIP networking event
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>1-on-1 mentor session
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 border-warning hover-card">
+                        <div class="card-header bg-warning text-dark text-center">
+                            <h5 class="mb-0 fw-bold">Student</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="display-6 fw-bold text-warning mb-3">$99</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Access to all sessions
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Conference materials
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-success me-2"></i>Student networking
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="mb-4 text-center">Registration Form</h2>
+                            
+                            <form novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" 
+                                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid phone number (XXX-XXX-XXXX).
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="company" class="form-label">Company/Organization *</label>
+                                    <input type="text" class="form-control" id="company" name="company" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your company or organization.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="jobTitle" class="form-label">Job Title *</label>
+                                    <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your job title.
+                                    </div>
+                                </div>
+
+                                <fieldset class="mb-3">
+                                    <legend class="form-label">Ticket Type *</legend>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ticketType" 
+                                                       id="standard" value="standard" required>
+                                                <label class="form-check-label" for="standard">
+                                                    Standard ($199)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ticketType" 
+                                                       id="premium" value="premium" required>
+                                                <label class="form-check-label" for="premium">
+                                                    Premium ($299)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ticketType" 
+                                                       id="student" value="student" required>
+                                                <label class="form-check-label" for="student">
+                                                    Student ($99)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invalid-feedback d-block" style="display: none !important;" id="ticketError">
+                                        Please select a ticket type.
+                                    </div>
+                                </fieldset>
+
+                                <div class="mb-3">
+                                    <label for="dietary" class="form-label">Dietary Preferences *</label>
+                                    <select class="form-select" id="dietary" name="dietary" required>
+                                        <option value="">Select dietary preference</option>
+                                        <option value="none">No restrictions</option>
+                                        <option value="vegetarian">Vegetarian</option>
+                                        <option value="vegan">Vegan</option>
+                                        <option value="gluten-free">Gluten-free</option>
+                                        <option value="kosher">Kosher</option>
+                                        <option value="halal">Halal</option>
+                                        <option value="other">Other (please specify in comments)</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select your dietary preference.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="experience" class="form-label">Years of Tech Experience</label>
+                                    <select class="form-select" id="experience" name="experience">
+                                        <option value="">Select experience level</option>
+                                        <option value="0-2">0-2 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="6-10">6-10 years</option>
+                                        <option value="10+">10+ years</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="interests" class="form-label">Areas of Interest (select all that apply)</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="ai" id="ai">
+                                                <label class="form-check-label" for="ai">Artificial Intelligence</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="web" id="web">
+                                                <label class="form-check-label" for="web">Web Development</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="mobile" id="mobile">
+                                                <label class="form-check-label" for="mobile">Mobile Development</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="blockchain" id="blockchain">
+                                                <label class="form-check-label" for="blockchain">Blockchain</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="iot" id="iot">
+                                                <label class="form-check-label" for="iot">Internet of Things</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="cybersecurity" id="cybersecurity">
+                                                <label class="form-check-label" for="cybersecurity">Cybersecurity</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="comments" class="form-label">Additional Comments</label>
+                                    <textarea class="form-control" id="comments" name="comments" rows="3" 
+                                              placeholder="Any special requirements, questions, or additional information?"></textarea>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Subscribe to our newsletter for event updates and future conferences
+                                    </label>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and 
+                                        <a href="#" class="text-primary">Privacy Policy</a> *
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to the terms and conditions.
+                                    </div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-calendar-plus me-2"></i>Complete Registration
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="text-center">
+                <small>&copy; 2025 TechConnect Conference. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

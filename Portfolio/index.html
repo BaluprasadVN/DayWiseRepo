@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V N Balu Prasad - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Balu Prasad</a>
+            
+            <!-- Theme Toggle -->
+            <button class="btn btn-link text-light me-3 d-lg-none" id="themeToggle">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <!-- Theme Toggle for Desktop -->
+                <button class="btn btn-link text-light d-none d-lg-block" id="themeToggleDesktop">
+                    <i class="fas fa-moon" id="themeIconDesktop"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-3">
+                            Hi, I'm <span class="text-primary">Java Fullstack Developer</span>
+                        </h1>
+                        <h2 class="h3 mb-4">
+                            <span id="typed-text"></span>
+                            <span class="cursor">|</span>
+                        </h2>
+                        <p class="lead mb-4">
+                            Creating digital experiences that make a difference. 
+                            Passionate about clean code and innovative solutions.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">Get In Touch</a>
+                            <a href="https://drive.google.com/file/d/1AfKTOmTFw0kR9nZPPEndbgvhQDoBxtaX/view?usp=sharing" class="btn btn-outline-primary btn-lg">Download CV</a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/BaluprasadVN" class="me-3"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vnbaluprasad/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/BaluPrasad79961?t=l4p36YTuPon29TT-fTRIxA&s=09" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/balu_.09?igsh=MXFuZG9ya3BtcHQ=" class="me-3"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/chennai4.jpg" 
+                             alt="Profile" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--About-->
+   <!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-content text-center">
+                    <h3 class="mb-4">Software Developer & Problem Solver</h3>
+                    <p class="mb-4">
+                        I'm a dedicated Software Developer with expertise in Full Stack Development. 
+                        Recent B.Tech graduate with <strong>9.19 GPA</strong> and hands-on experience through 
+                        multiple internships at Coffeebeans.io, Walmart, and Besant Technologies.
+                    </p>
+                    <p class="mb-4">
+                        My journey in technology spans from achieving 99.24% accuracy in ML projects to 
+                        building scalable web applications using modern technologies like React.js, Spring Boot, and Node.js.
+                    </p>
+                    <p class="mb-5">
+                        Currently working as a Software Developer Intern at Coffeebeans.io, where I develop 
+                        RESTful services, integrate APIs, and practice TDD in an Agile environment.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="row stats-row">
+                        <div class="col-6 col-md-3 text-center mb-3">
+                            <div class="stat-item">
+                                <h4 class="stat-number">9.19</h4>
+                                <p class="stat-label">GPA / 10</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center mb-3">
+                            <div class="stat-item">
+                                <h4 class="stat-number">99.24%</h4>
+                                <p class="stat-label">ML Accuracy</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center mb-3">
+                            <div class="stat-item">
+                                <h4 class="stat-number">3+</h4>
+                                <p class="stat-label">Internships</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center mb-3">
+                            <div class="stat-item">
+                                <h4 class="stat-number">10+</h4>
+                                <p class="stat-label">Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Programming Languages -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center"><i class="fas fa-code me-2"></i>Languages</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Java</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Go</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frontend & Backend -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center"><i class="fas fa-laptop-code me-2"></i>Frontend & Backend</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>React.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Spring Boot</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Next.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Databases -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center"><i class="fas fa-tools me-2"></i>Tools & Databases</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Git/GitHub</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MySQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Postman</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>PostgreSQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MongoDB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Practices -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <h4 class="mb-3">Development Practices & Methodologies</h4>
+                    <div class="practices-badges">
+                        <span class="badge bg-primary me-2 mb-2">Agile Methodology</span>
+                        <span class="badge bg-primary me-2 mb-2">Scrum Framework</span>
+                        <span class="badge bg-primary me-2 mb-2">Test Driven Development</span>
+                        <span class="badge bg-primary me-2 mb-2">CI/CD Pipelines</span>
+                        <span class="badge bg-primary me-2 mb-2">SOLID Principles</span>
+                        <span class="badge bg-primary me-2 mb-2">Clean Code</span>
+                        <span class="badge bg-primary me-2 mb-2">Microservices</span>
+                        <span class="badge bg-primary me-2 mb-2">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <!-- Experience Section -->
+<section id="experience" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <!-- Experience Item 1 - Coffeebeans.io -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5>Software Developer Intern</h5>
+                                <span class="badge bg-success">Current</span>
+                            </div>
+                            <p class="timeline-company">Coffeebeans.io</p>
+                            <p class="timeline-date">Feb 2025 - May 2025</p>
+                            <div class="timeline-description">
+                                <ul>
+                                    <li>Developed RESTful services and frontend features using React.js, Node.js, PostgreSQL, and Strapi</li>
+                                    <li>Integrated SendGrid Email API for transactional email delivery and system notifications</li>
+                                    <li>Built and optimized CRUD operations for user management and feedback modules</li>
+                                    <li>Resolved multiple functional and UI bugs while enhancing system features</li>
+                                    <li>Practiced TDD and CI/CD using Jest, Postman, and GitHub pipelines</li>
+                                    <li>Collaborated with cross-functional teams in an Agile Scrum environment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Item 2 - Walmart -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h5>Software Developer (Virtual Internship)</h5>
+                            <p class="timeline-company">Walmart</p>
+                            <p class="timeline-date">Sep 2024 - Oct 2024</p>
+                            <div class="timeline-description">
+                                <ul>
+                                    <li>Designed and implemented heap data structure in Java, improving logistics logic by 25%</li>
+                                    <li>Created scalable system architecture using UML, ERD, and microservice design</li>
+                                    <li>Integrated and tested REST and SOAP APIs for cross-system communication</li>
+                                    <li>Enhanced backend using queues and caches to improve system performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Item 3 - Besant Technologies -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h5>Java Full Stack Trainee</h5>
+                            <p class="timeline-company">Besant Technologies</p>
+                            <p class="timeline-date">Jun 2024 - Aug 2024</p>
+                            <div class="timeline-description">
+                                <ul>
+                                    <li>Completed project-based training in Spring Boot, Java, React.js, MySQL, and REST APIs</li>
+                                    <li>Built secure and scalable full-stack applications; deployed using Git and Maven</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5>B.Tech in Computer Science</h5>
+                                <span class="badge bg-warning text-dark">GPA: 9.19/10</span>
+                            </div>
+                            <p class="timeline-company">Sree Vidyanikethan Engineering College</p>
+                            <p class="timeline-location text-muted">Tirupati, Andhra Pradesh</p>
+                            <p class="timeline-date">Nov 2021 - July 2024</p>
+                            <p class="timeline-description">
+                                <strong>Relevant Coursework:</strong> Operating Systems, Data Structures and Algorithms, Computational Theory
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Diploma -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5>Diploma in Computer Science</h5>
+                                <span class="badge bg-info">88.48%</span>
+                            </div>
+                            <p class="timeline-company">Balaji Infotech Institute of Technology</p>
+                            <p class="timeline-location text-muted">Hindupur, Andhra Pradesh</p>
+                            <p class="timeline-date">July 2018 - June 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Brain Tumor Detection Project -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop" 
+                                 alt="Brain Tumor Detection" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="project-title mb-0">Brain Tumor Detection</h5>
+                                <span class="badge bg-success">99.24% Accuracy</span>
+                            </div>
+                            <p class="project-description">Machine Learning project achieving 99.24% accuracy with Xception CNN in brain MRI classification using TensorFlow and Keras.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">TensorFlow</span>
+                                <span class="badge bg-primary me-1">Keras</span>
+                                <span class="badge bg-primary me-1">CNN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dad Jokes Generator -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=250&fit=crop" 
+                                 alt="Dad Jokes Generator" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="project-title mb-0">Dad Jokes Generator</h5>
+                                <span class="badge bg-info">+40% Engagement</span>
+                            </div>
+                            <p class="project-description">Real-time API-integrated app with animated UI that increased user engagement by 40%. Features dynamic content loading and responsive design.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary me-1">HTML</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shopping Cart App -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" 
+                                 alt="Shopping Cart App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Shopping Cart App</h5>
+                            <p class="project-description">Interactive e-commerce shopping cart with dynamic state management, responsive UI, and real-time price calculations.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">HTML</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-primary me-1">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Editor -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop" 
+                                 alt="Java Text Editor" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vnbaluprasad" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Java Text Editor</h5>
+                            <p class="project-description">GUI-based text editor built with Java Swing featuring Save, Open, Font customization, and file management capabilities.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary me-1">Java</span>
+                                <span class="badge bg-primary me-1">Swing</span>
+                                <span class="badge bg-primary me-1">GUI</span>
+                                <span class="badge bg-primary me-1">File I/O</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <!-- Contact Info -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="contact-info">
+                                <div class="contact-item text-center mb-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h6>Email</h6>
+                                    <p>vnbaluprasad@gmail.com</p>
+                                </div>
+                                <div class="contact-item text-center mb-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h6>Phone</h6>
+                                    <p>+91 7288849341</p>
+                                </div>
+                                <div class="contact-item text-center">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h6>Location</h6>
+                                    <p>Bengaluru, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Form -->
+                        <div class="col-lg-8">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Balu Prasad. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://github.com/BaluprasadVN" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vnbaluprasad/" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/BaluPrasad79961?t=l4p36YTuPon29TT-fTRIxA&s=09" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/balu_.09?igsh=MXFuZG9ya3BtcHQ=" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
